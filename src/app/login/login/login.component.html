@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+
+      <ul class="list-group list-group-flush">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" >用户名</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text " >密码</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+
+
+      </ul>
+
+    </div>
+    <div class="btn-group btn-group-lg row justify-content-md-center" role="group" aria-label="...">
+      <button (click)="gotoLogin()" type="button" class="btn-success">登陆</button>
+      <button (click)="gotoRegister()"  type="button" class="btn-info">注册</button>
+    </div>
+
+  </div>
+</div>
+

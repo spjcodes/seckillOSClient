@@ -1,0 +1,64 @@
+<div class="card">
+  <form >
+
+
+  <div class="card-header">
+    用户注册
+  </div>
+  <div class="card-body">
+
+    <ul class="list-group list-group-flush">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" >用户名</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text " >密码</span>
+        </div>
+        <input type="password" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text " >确认密码</span>
+        </div>
+        <input type="password" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" >性别</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" >年龄</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" >手机</span>
+        </div>
+        <input [(ngModel)]=user.telephone name="telephone"  aria-describedby="basic-addon1" aria-label="Username" class="form-control" placeholder="Username"
+               type="text"  >
+      </div>
+
+
+
+    </ul>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <button (click)="getOtp(user.telephone)"  class="btn-group btn-group-lg btn-primary">获取验证码</button>
+      </div>
+      <input type="text" class="form-control" placeholder="请输入验证码" aria-label="Input group example" aria-describedby="btnGroupAddon2">
+    </div>
+  </div>
+  <div class="col">
+    <button  (click)="register(user)" type="submit" class="btn-primary">注册</button>
+    <button type="reset" class="btn-primary">重置</button>
+  </div>
+  </form>
+</div>
