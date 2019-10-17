@@ -3,4 +3,5 @@ export class User {
   gender: string;
   age: string;
   telephone: string;
+  password: string;
 }

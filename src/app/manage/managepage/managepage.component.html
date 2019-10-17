@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-2" >
+    <nav class="nav ">
+      <a class="nav-link"  (click)="toUserMange()" >用户管理</a>
+      <a class="nav-link"  (click)="toProductManage()">商品管理</a>
+      <a class="nav-link"  [routerLink]="['']">库存管理</a>
+      <a class="nav-link"  [routerLink]="['']">活动管理</a>
+      <a class="nav-link"  [routerLink]="['']" >板块管理</a>
+    </nav>
+  </div>
+
+  <div class="col-10" style="border:1px solid red">
+      <router-outlet></router-outlet>
+  </div>
+</div>
+
